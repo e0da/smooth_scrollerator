@@ -174,13 +174,6 @@ function init() {
         s.innerHTML = ".iu { visibility: hidden }";
         (document.getElementsByTagName("head")[0] || html).appendChild(s);
     }
-    // youtube shaking video fix 
-    else if (document.URL.indexOf("http://www.youtube.com") === 0) {
-        var player = document.getElementById("watch-player");
-        var embed = player.getElementsByTagName("embed");
-        embed[0].setAttribute("wmode", "opaque");
-        player.innerHTML = player.innerHTML;
-    } 
     // disable fixed background
     if (!fixedback && !disabled) {
         body.style.backgroundAttachment = "scroll";
@@ -211,9 +204,9 @@ function scrollArray(elem, left, top, delay) {
         if (elapsed < accelDelta) {
             var factor = (1 + (30 / elapsed)) / 2;
             if (factor > 1) {
-                factor = Math.min(factor, accelMax);
-                left *= factor;
-                top  *= factor;
+              factor = Math.min(factor, accelMax);
+              left *= factor;
+              top  *= factor;
             }
         }
         lastScroll = +new Date;
@@ -235,9 +228,9 @@ function scrollArray(elem, left, top, delay) {
 
     var scrollWindow = (elem === document.body);
     
-    var step = function(time) {
+    var step = function() {
         
-        var now = time || +new Date;
+        var now = +new Date;
         var scrollX = 0;
         var scrollY = 0; 
     
@@ -275,7 +268,7 @@ function scrollArray(elem, left, top, delay) {
 
         // scroll left and top
         if (scrollWindow) {
-            window.scrollBy(scrollX, scrollY);
+            window.scrollBy(scrollX, scrollY)
         } 
         else {
             if (scrollX) elem.scrollLeft += scrollX;
@@ -292,7 +285,7 @@ function scrollArray(elem, left, top, delay) {
         } else { 
             pending = false;
         }
-    };
+    }
     
     // start a new queue of actions
     requestFrame(step, elem, 0);
@@ -500,7 +493,7 @@ var requestFrame = (function(){
       return  window.requestAnimationFrame       || 
               window.webkitRequestAnimationFrame || 
               function(callback, element, delay){
-                  window.setTimeout(callback, delay || (1000/60));
+                window.setTimeout(callback, delay || (1000/60));
               };
 })();
 

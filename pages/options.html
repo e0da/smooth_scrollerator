@@ -193,7 +193,8 @@ var options = [
   'pulseScale',
   'keyboardsupport',
   'exclude',
-  'fixedback'
+  'fixedback',
+  'smoothscrollapp.marketing'
 ];
 
 function byId(id) { return document.getElementById(id); }
@@ -239,7 +240,7 @@ function init() {
         
     // fill the form fields from localStorage
     options.forEach(function(key, i) {
-        if (/keyboardsupport|middlemouse|pulseAlgorithm|fixedback/.test(key)) {
+        if (/keyboardsupport|middlemouse|pulseAlgorithm|fixedback|smoothscrollapp.marketing/.test(key)) {
             byId(key).checked = (localStorage[key] == "true");
         } else if (localStorage[key]) {
             byId(key).value = localStorage[key];
@@ -257,7 +258,7 @@ function save() {
     // save options to the local storage
     options.forEach(function(key, i) {
         // <input type="text"> and <textarea>
-        if (!/keyboardsupport|middlemouse|pulseAlgorithm|fixedback/.test(key)) {
+        if (!/keyboardsupport|middlemouse|pulseAlgorithm|fixedback|smoothscrollapp.marketing/.test(key)) {
             elem = byId(key);
             opt = elem.value;
             // every <input> 
@@ -353,7 +354,7 @@ function set_profile(profile) {
 
     // set
     for (var key in profile) {
-        if (/keyboardsupport|middlemouse|pulseAlgorithm|fixedback/.test(key)) {
+        if (/keyboardsupport|middlemouse|pulseAlgorithm|fixedback|smoothscrollapp.marketing/.test(key)) {
             byId(key).checked = (profile[key] == "true");
         } else if (localStorage[key]) {
             byId(key).value = profile[key];
@@ -457,6 +458,8 @@ window.set_profile = set_profile;
 <input type="checkbox" id="middlemouse"><label for="middlemouse" title="scroll smooth with the middle mouse button">Enable <b>middle mouse</b> scrolling</label><br><br>
 
 <input type="checkbox" id="fixedback"><label for="fixedback" title="disabling it improves performance on sites like twitter.com">Enable <b>fixed backgrounds</b></label><br><br>
+
+<input type="checkbox" id="smoothscrollapp.marketing"><label for="smoothscrollapp.marketing">Enable <b>marketing</b></label><br><br>
 
 <table border="0" cellpadding="0" cellspacing="2" style="font-size: 12px; ">
 

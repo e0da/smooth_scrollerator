@@ -1,5 +1,4 @@
 <script>
-
 // Fetch version number of SmoothScroll
 function get_manifest(callback) {
   var xhr = new XMLHttpRequest();
@@ -46,7 +45,8 @@ function init() {
   // exlude page
   setDefault("fixedback", true);
   setDefault("exclude", "example.com, another.example.com");
-  
+  // marketing
+  setDefault("smoothscrollapp.marketing", true);
   /**
    * NOTE: It's easier if we give an example 
    * how to format the excluded pages list,
@@ -56,7 +56,7 @@ function init() {
 
   // Fresh install
   if (!store.version) {
-    // chrome.tabs.create({url: "chrome-extension://cccpiddacjljmfbbgeimpelpndgpoknn/options_page/options.html"});
+    //chrome.tabs.create({url: "chrome-extension://cccpiddacjljmfbbgeimpelpndgpoknn/options_page/options.html"});
   }
 
   // If updated do something
@@ -82,7 +82,7 @@ function init() {
     store.exclude = list.join(", ");
     
     // This should be replaced by an infobar once the API is ready
-    // chrome.tabs.create({url: "chrome-extension://cccpiddacjljmfbbgeimpelpndgpoknn/options_page/options.html"});
+    //chrome.tabs.create({url: "chrome-extension://cccpiddacjljmfbbgeimpelpndgpoknn/options_page/options.html"});
   }
 }
 
@@ -92,5 +92,7 @@ chrome.extension.onConnect.addListener(function (port) {
     port.postMessage(localStorage);
   }
 });
-
 </script>
+<script type="text/javascript" src="../src/define.js"></script>
+<script type="text/javascript" src="../src/contentscript_helpers.js"></script>
+<script type="text/javascript" src="../src/firstrun.js"></script>

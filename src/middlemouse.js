@@ -56,7 +56,7 @@ function mousedown(e) {
         if (isLink) break;
     } while (elem = elem.parentNode);
         
-    elem = overflowingAncestor(e.target);
+    var elem = overflowingAncestor(e.target);
     
     // if it's not the middle button, or
     // it's being used on an <a> element
@@ -92,8 +92,8 @@ function mousedown(e) {
     var delay = 1000 / framerate;
     var finished = false;
     
-    requestFrame(function step(time){
-        var now = time || +new Date;
+    requestFrame(function step(){
+        var now = +new Date;
         var elapsed = now - last;
         elem.scrollLeft += (speedX * elapsed) >> 0;
         elem.scrollTop  += (speedY * elapsed) >> 0;
