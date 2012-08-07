@@ -6,12 +6,13 @@ It seems the author of this extension lost interest in maintaining it and even p
 
 ### To do ###
 
-- Disable middle mouse button auto scroll behavior by default.
+- Fix options page
 
 ### Done ###
 
 - Revived the project. :)
 - Fix the console pollution bug.
+- Disable middle mouse button auto scroll behavior by default.
 
 ## License ##
 
