@@ -98,7 +98,7 @@ function checkMarketingStatus()
 		if (getDayDelta(disabledate[0],disabledate[1],disabledate[2])<=-7)
 		{
 			localStorage.removeItem(pluginNamespace+'.disableperiod');
-			localStorage.setItem(pluginNamespace+'.marketing',true);	
+			localStorage.setItem(pluginNamespace+'.marketing',true);
 		}
 	}
 }

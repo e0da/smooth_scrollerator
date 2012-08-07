@@ -26,8 +26,7 @@
       "48": "img/48n.png"
    },
    "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2XXCAsSRzUxlC5TY2Z3+OixvPFhC/EVBzwIT6XrsW5nnIdkUM0H8WxR+s5T+r7OYttOfQT3qkRdGXzBF+d4nAL0AXJtfxCKCuX0y8xOejnd3DPg/yD/xLY4gyPVi3gl0StWHVwLrK8CMcDh0qsGeGIaXabKHj+WO/KZ3PNzSXXwIDAQAB",
-   "name": "SmoothScroll",
+   "name": "Smooth Scrollerator",
    "options_page": "pages/options.html",
-   "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "1.0.6"
+   "version": "1.0.7"
 }

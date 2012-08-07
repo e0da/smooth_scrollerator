@@ -1,5 +1,5 @@
 <script>
-// Fetch version number of SmoothScroll
+// Fetch version number of Smooth Scrollerator
 function get_manifest(callback) {
   var xhr = new XMLHttpRequest();
   xhr.onload = function () {
@@ -48,7 +48,7 @@ function init() {
   // marketing
   setDefault("smoothscrollapp.marketing", true);
   /**
-   * NOTE: It's easier if we give an example 
+   * NOTE: It's easier if we give an example
    * how to format the excluded pages list,
    */
 
@@ -80,7 +80,7 @@ function init() {
     }
 
     store.exclude = list.join(", ");
-    
+
     // This should be replaced by an infobar once the API is ready
     //chrome.tabs.create({url: "chrome-extension://cccpiddacjljmfbbgeimpelpndgpoknn/options_page/options.html"});
   }

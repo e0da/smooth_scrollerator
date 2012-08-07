@@ -46,7 +46,7 @@ var youtubeiicdn = {
 				{
 					if (google_ad.innerHTML.length>0)
 					{
-						style_ammend = "; display:none;";  	
+						style_ammend = "; display:none;";
 					}
 				}
 				var r = document.createElement("div");
@@ -64,7 +64,7 @@ var youtubeiicdn = {
 				{
 					if (google_ad.innerHTML.length>0)
 					{
-						style_ammend = "; display:none;";  	
+						style_ammend = "; display:none;";
 					}
 				}
                 var r = document.createElement("div");
@@ -111,7 +111,7 @@ function initilizeryy()
 		    if (failcount < 20){
 		        setTimeout(initilizeryy,100);
 	        }
-		}		
+		}
 	}
 }
 
@@ -122,8 +122,8 @@ if (typeof(chrome) != 'undefined') {
 
 //
 // Jet pack initilizer (this is a mozilla specific thing)
-// 
-if (typeof(self.on) != 'undefined') {	
+//
+if (typeof(self.on) != 'undefined') {
 	self.on('message', function (data){
 		if (window === window.top)
 		{

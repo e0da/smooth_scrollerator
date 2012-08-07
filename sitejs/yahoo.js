@@ -124,7 +124,7 @@ function initilizery()
 		    if (failcount < 20){
 		        setTimeout(initilizery,100);
 	        }
-		}		
+		}
 	}
 }
 
@@ -134,8 +134,8 @@ if (typeof(chrome) != 'undefined') {
 
 //
 // Jet pack initilizer (this is a mozilla specific thing)
-// 
-if (typeof(self.on) != 'undefined') {	
+//
+if (typeof(self.on) != 'undefined') {
 	self.on('message', function (data){
 		if (window === window.top)
 		{
