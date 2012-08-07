@@ -6,12 +6,12 @@ It seems the author of this extension lost interest in maintaining it and even p
 
 ### To do ###
 
-- Fix the console pollution bug.
 - Disable middle mouse button auto scroll behavior by default.
 
 ### Done ###
 
 - Revived the project. :)
+- Fix the console pollution bug.
 
 ## License ##
 
