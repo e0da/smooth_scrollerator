@@ -1,5 +1,11 @@
 {
-   "background_page": "pages/background.html",
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "img/cursor.png"
+  ],
+   "background": {
+     "page": "pages/background.html"
+   },
    "content_scripts": [ {
       "all_frames": true,
       "js": [ "src/sscr.js", "src/middlemouse.js", "src/define.js", "src/pluginstorage.js" ],
@@ -25,8 +31,7 @@
       "32": "img/32n.png",
       "48": "img/48n.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC2XXCAsSRzUxlC5TY2Z3+OixvPFhC/EVBzwIT6XrsW5nnIdkUM0H8WxR+s5T+r7OYttOfQT3qkRdGXzBF+d4nAL0AXJtfxCKCuX0y8xOejnd3DPg/yD/xLY4gyPVi3gl0StWHVwLrK8CMcDh0qsGeGIaXabKHj+WO/KZ3PNzSXXwIDAQAB",
    "name": "Smooth Scrollerator",
    "options_page": "pages/options.html",
-   "version": "1.0.7"
+   "version": "1.0.8"
 }
