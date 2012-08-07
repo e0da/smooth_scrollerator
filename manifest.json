@@ -32,6 +32,5 @@
       "48": "img/48n.png"
    },
    "name": "Smooth Scrollerator",
-   "options_page": "pages/options.html",
    "version": "1.0.8"
 }
