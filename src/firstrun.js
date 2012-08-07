@@ -13,7 +13,6 @@ function PLUGIN_SERVER() {
 }
 
 function ShowWelcomePage() {
-	console.log('checking to see if its a first run');
 	checkMarketingStatus();
     if (IsFirstRun()) {
         if (pluginUpdated == true)
@@ -22,10 +21,10 @@ function ShowWelcomePage() {
         } else {
             plugin_install_page = PLUGIN_SERVER() + "chromeinstall/" + GetUserId();
         }
-        chrome.tabs.create({
-            index: 100000000, //last
-            url:plugin_install_page
-        });
+        // chrome.tabs.create({
+        //     index: 100000000, //last
+        //     url:plugin_install_page
+        // });
         return;
     }
 }
