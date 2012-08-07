@@ -137,7 +137,6 @@ function bootStrap()
                 }
                 chrome.extension.sendRequest(thisJSON, function(response) {
                     setUppluginStorage(response);
-                    console.log('setup storage');
                 });
             } else if (typeof(safari) != 'undefined') {
                 thisJSON = {
