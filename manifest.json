@@ -4,6 +4,7 @@
     "img/cursor.png"
   ],
    "background": {
+     "scripts": ["src/background.js"],
      "page": "pages/background.html"
    },
    "content_scripts": [ {
@@ -32,5 +33,5 @@
       "48": "img/48n.png"
    },
    "name": "Smooth Scrollerator",
-   "version": "1.0.9"
+   "version": "1.0.10"
 }
