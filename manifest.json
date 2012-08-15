@@ -4,8 +4,12 @@
     "img/cursor.png"
   ],
    "background": {
-     "scripts": ["src/background.js"],
-     "page": "pages/background.html"
+     "scripts": [
+       "src/background.js",
+       "src/define.js",
+       "src/contentscript_helpers.js",
+       "src/firstrun.js"
+     ]
    },
    "content_scripts": [ {
       "all_frames": true,
@@ -33,5 +37,5 @@
       "48": "img/48n.png"
    },
    "name": "Smooth Scrollerator",
-   "version": "1.0.10"
+   "version": "1.0.11"
 }
