@@ -1,18 +1,29 @@
 # Smooth Scrollerator #
 
-It seems the author of this extension lost interest in maintaining it and even pulled it from the Chrome Web Store! Well, before he did that, he open sourced it with the MIT license. So here's my fork.
+Scroll smoothly in Chrome.
+
+## History ##
+
+For unknown reasons, the original version of this extension made by
+Balazs Galambosi no longer available in the Chrome Web Store.
+Fortunately, it's open source and MIT licensed, so I have forked it and
+will be updating it.
 
 ## Improvements ##
 
 ### To do ###
 
-- Fix options page
+- Ground up rewrite in CoffeeScript
+- Implement options page
 
 ### Done ###
 
 - Revived the project. :)
 - Fix the console pollution bug.
 - Disable middle mouse button auto scroll behavior by default.
+- Removed skeezy iicdn marketing bullshit! Not cool. This may be why the
+  original extension disappeared from the Web Store. I'm glad I found
+  it.
 
 ## License ##
 
@@ -24,7 +35,8 @@ Copyright (c) 2012 by Justin Force
 
 ## The Author's Original README ##
 
-A Google Chrome extension for smooth scrolling with the mouse wheel and keyboard buttons.
+A Google Chrome extension for smooth scrolling with the mouse wheel and
+keyboard buttons.
 
 Extension homepage
  https://chrome.google.com/extensions/detail/cccpiddacjljmfbbgeimpelpndgpoknn
