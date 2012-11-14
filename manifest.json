@@ -1,41 +1,23 @@
 {
+  "name": "Smooth Scrollerator",
+  "version": "1.1.1",
   "manifest_version": 2,
   "web_accessible_resources": [
     "img/cursor.png"
   ],
-   "background": {
-     "scripts": [
-       "src/background.js",
-       "src/define.js",
-       "src/contentscript_helpers.js",
-       "src/firstrun.js"
-     ]
-   },
-   "content_scripts": [ {
+  "content_scripts": [
+    {
       "all_frames": true,
-      "js": [ "src/sscr.js", "src/middlemouse.js", "src/define.js", "src/pluginstorage.js" ],
-      "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ],
+      "js": [ "src/sscr.js" ],
+      "matches": [ "*://*/*" ],
       "run_at": "document_start"
-   }, {
-      "exclude_globs": [  ],
-      "include_globs": [ "*" ],
-      "js": [ "sitejs/yahoo.js" ],
-      "matches": [ "http://yahoo.com/*", "http://*.yahoo.com/*", "https://yahoo.com/*", "https://*.yahoo.com/*" ],
-      "run_at": "document_end"
-   }, {
-      "exclude_globs": [  ],
-      "include_globs": [ "*" ],
-      "js": [ "sitejs/youtube.js" ],
-      "matches": [ "http://youtube.com/*", "http://*.youtube.com/*", "https://youtube.com/*", "https://*.youtube.com/*" ],
-      "run_at": "document_end"
-   } ],
-   "description": "Scrolls the websites smoothly when scrolling with the mouse wheel or the keyboard",
-   "icons": {
-      "128": "img/128n.png",
-      "16": "img/16n.png",
-      "32": "img/32n.png",
-      "48": "img/48n.png"
-   },
-   "name": "Smooth Scrollerator",
-   "version": "1.0.11"
+    }
+  ],
+  "description": "Scroll smoothly",
+  "icons": {
+    "128": "img/128n.png",
+    "16": "img/16n.png",
+    "32": "img/32n.png",
+    "48": "img/48n.png"
+  }
 }
