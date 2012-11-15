@@ -5,7 +5,7 @@ fs = require 'fs'
 
 pkg_files = [
   'background.html'
-  'images'
+  'img'
   'lib'
   'manifest.json'
   'README.md'
