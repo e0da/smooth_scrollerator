@@ -7,6 +7,8 @@ pkg_files = [
   'background.html'
   'img'
   'lib'
+  'src'
+  'vendor'
   'manifest.json'
   'README.md'
   'LICENSE'
